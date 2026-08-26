@@ -16,7 +16,7 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Headshot lives at `public/photo.jpg` and renders in grayscale.
+Portrait lives at `public/photo.jpg`.
 
 ## Links
 

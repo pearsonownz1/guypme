@@ -66,9 +66,8 @@ function Headshot() {
   return (
     <div className="photo-frame">
       {hasPhoto ? (
-        // Design spec: square crop, rendered grayscale
         // eslint-disable-next-line @next/next/no-img-element
-        <img src="/photo.jpg" alt="Guy Pearson" />
+        <img src="/photo.jpg?v=2" alt="Guy Pearson" />
       ) : (
         <span className="photo-fallback" aria-hidden>
           GP
@@ -126,8 +125,7 @@ export default function Home() {
 
       <article className="story">
         <p>
-          Hi there, my name is Guy. I’m based in Austin, Texas, and my career
-          has taken a slightly unusual route.
+          Hi, my name is Guy. I’m based in Austin, Texas 👋
         </p>
         <p>
           I started out in the military working in supply chain and logistics.
