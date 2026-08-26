@@ -1,12 +1,30 @@
 import { existsSync } from "node:fs";
 import { join } from "node:path";
+import type { ReactNode } from "react";
 
 const links = {
   linkedin: "https://www.linkedin.com/in/guy-pearson1/",
   email: "mailto:gtlpearson@gmail.com",
   github: "https://github.com/pearsonownz1",
   x: "https://x.com/GuyPearsonzzud",
+  gcs: "https://gcs.org",
+  iee: "https://myiee.org",
+  pandadoc: "https://pandadoc.com",
 };
+
+function OutLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: ReactNode;
+}) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
+  );
+}
 
 const route = [
   {
@@ -29,7 +47,8 @@ const route = [
     era: "After service",
     detail: (
       <>
-        <strong>Head of Product</strong> · International Education Evaluations
+        <strong>Head of Product</strong> ·{" "}
+        <OutLink href={links.iee}>International Education Evaluations</OutLink>
       </>
     ),
   },
@@ -45,7 +64,8 @@ const route = [
     era: "Post-acquisition",
     detail: (
       <>
-        <strong>Director of Product</strong> · PandaDoc
+        <strong>Director of Product</strong> ·{" "}
+        <OutLink href={links.pandadoc}>PandaDoc</OutLink>
       </>
     ),
   },
@@ -54,7 +74,8 @@ const route = [
     now: true,
     detail: (
       <>
-        <strong>VP of Product</strong> · GEO Credential Services
+        <strong>VP of Product</strong> ·{" "}
+        <OutLink href={links.gcs}>GEO Credential Services</OutLink>
       </>
     ),
   },
@@ -118,7 +139,9 @@ export default function Home() {
         <div>
           <h1>Guy Pearson</h1>
           <div className="sub">
-            VP of Product, GEO Credential Services · Austin, Texas
+            VP of Product,{" "}
+            <OutLink href={links.gcs}>GEO Credential Services</OutLink> ·
+            Austin, Texas
           </div>
         </div>
       </section>
@@ -140,8 +163,9 @@ export default function Home() {
         <p>
           I worked across product lines involving translations and credential
           evaluations for universities, law firms, and immigration
-          professionals, eventually leading product at International Education
-          Evaluations. During that time, we grew the company from roughly 5
+          professionals, eventually leading product at{" "}
+          <OutLink href={links.iee}>International Education Evaluations</OutLink>
+          . During that time, we grew the company from roughly 5
           people to more than 70.
         </p>
         <p>
@@ -162,14 +186,18 @@ export default function Home() {
           >
             LiveNotary was eventually acquired
           </a>{" "}
-          by PandaDoc, where I joined the team and got to experience a very
-          different kind of scale. During my time there, PandaDoc grew from
+          by <OutLink href={links.pandadoc}>PandaDoc</OutLink>, where I joined
+          the team and got to experience a very different kind of scale. During
+          my time there, <OutLink href={links.pandadoc}>PandaDoc</OutLink> grew
+          from
           roughly $50M to more than $100M in ARR, and I eventually became
           Director of Product overseeing the company&apos;s eSignature and API
           product lines.
         </p>
         <p>
-          Today, I’m VP of Product at GEO Credential Services, where I’m once
+          Today, I’m VP of Product at{" "}
+          <OutLink href={links.gcs}>GEO Credential Services</OutLink>, where I’m
+          once
           again working at the intersection of technology, immigration,
           education, and document-heavy workflows.
         </p>
