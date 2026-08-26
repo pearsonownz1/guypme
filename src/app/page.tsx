@@ -155,11 +155,18 @@ export default function Home() {
           platforms in the United States.
         </p>
         <p>
-          LiveNotary was eventually acquired by PandaDoc, where I joined the
-          team and got to experience a very different kind of scale. During my
-          time there, PandaDoc grew from roughly $50M to more than $100M in ARR,
-          and I eventually became Director of Product overseeing the
-          company&apos;s eSignature and API product lines.
+          <a
+            href="https://www.crunchbase.com/acquisition/pandadoc-acquires-livenotary--5b3a9e10"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LiveNotary was eventually acquired
+          </a>{" "}
+          by PandaDoc, where I joined the team and got to experience a very
+          different kind of scale. During my time there, PandaDoc grew from
+          roughly $50M to more than $100M in ARR, and I eventually became
+          Director of Product overseeing the company&apos;s eSignature and API
+          product lines.
         </p>
         <p>
           Today, I’m VP of Product at GEO Credential Services, where I’m once
