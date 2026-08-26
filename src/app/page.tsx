@@ -3,9 +3,9 @@ import { join } from "node:path";
 
 const links = {
   linkedin: "https://www.linkedin.com/in/guy-pearson1/",
-  email: "mailto:guy@guyp.me",
-  github: "https://github.com/guypearson",
-  x: "https://x.com/guypearson",
+  email: "mailto:gtlpearson@gmail.com",
+  github: "https://github.com/pearsonownz1",
+  x: "https://x.com/GuyPearsonzzud",
 };
 
 const route = [

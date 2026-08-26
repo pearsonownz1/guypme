@@ -16,8 +16,11 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Add a square headshot as `public/photo.jpg` to replace the initials placeholder. The photo renders in grayscale.
+Headshot lives at `public/photo.jpg` and renders in grayscale.
 
 ## Links
 
-Update these in `src/app/page.tsx` if needed: `guy@guyp.me`, GitHub, and X are placeholders from the design. The LinkedIn URL is the live profile.
+- LinkedIn: https://www.linkedin.com/in/guy-pearson1/
+- Email: gtlpearson@gmail.com
+- GitHub: https://github.com/pearsonownz1
+- X: https://x.com/GuyPearsonzzud
