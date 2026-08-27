@@ -330,6 +330,15 @@ a:hover {
   margin: 0 0 6px;
 }
 
+.project-body h2 a,
+.project-body h2 span {
+  color: inherit;
+}
+
+.project-body h2 a:hover {
+  color: var(--color-accent);
+}
+
 .project-url {
   display: inline-block;
   font-size: 13px;
