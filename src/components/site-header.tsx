@@ -11,7 +11,7 @@ export function SiteHeader({ current }: { current?: "home" | "projects" }) {
   return (
     <header className="topbar">
       <Link href="/" className="brand">
-        guyp.me
+        Guy Pearson
       </Link>
       <nav className="topnav">
         <Link
