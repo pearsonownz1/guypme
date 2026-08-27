@@ -146,6 +146,13 @@ a:hover {
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 15px;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.brand:hover {
+  color: var(--color-accent);
+  text-decoration: none;
 }
 
 .topnav {
@@ -159,7 +166,8 @@ a:hover {
   font-weight: 600;
 }
 
-.site-link:hover {
+.site-link:hover,
+.site-link[aria-current="page"] {
   color: var(--color-accent);
   text-decoration: none;
 }
@@ -280,7 +288,75 @@ a:hover {
   margin-bottom: 24px;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  border-top: 2px solid var(--color-divider);
+  padding-top: 36px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.project-shot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 10;
+  border: 2px solid var(--color-divider);
+  background: var(--color-surface);
+  color: var(--color-neutral-500);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-body h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px;
+}
+
+.project-url {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.project-body p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-neutral-800);
+}
+
 @media (max-width: 560px) {
+  .topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .topnav {
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
   .intro {
     flex-direction: column;
     align-items: flex-start;
@@ -289,5 +365,9 @@ a:hover {
 
   .route-row {
     grid-template-columns: 100px 1fr;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
   }
 }

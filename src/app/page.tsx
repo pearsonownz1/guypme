@@ -1,6 +1,7 @@
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import type { ReactNode } from "react";
+import { SiteHeader } from "@/components/site-header";
 
 const links = {
   linkedin: "https://www.linkedin.com/in/guy-pearson1/",
@@ -101,38 +102,7 @@ function Headshot() {
 export default function Home() {
   return (
     <div className="wrap">
-      <header className="topbar">
-        <span className="brand">guyp.me</span>
-        <nav className="topnav">
-          <a
-            className="site-link"
-            href={links.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-          <a className="site-link" href={links.email}>
-            Email
-          </a>
-          <a
-            className="site-link"
-            href={links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            className="site-link"
-            href={links.x}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            X
-          </a>
-        </nav>
-      </header>
+      <SiteHeader current="home" />
 
       <section className="intro">
         <Headshot />
