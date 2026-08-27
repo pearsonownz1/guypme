@@ -11,6 +11,7 @@ const links = {
   gcs: "https://gcs.org",
   iee: "https://myiee.org",
   pandadoc: "https://pandadoc.com",
+  crediteval: "https://crediteval.com",
 };
 
 function OutLink({
@@ -128,7 +129,10 @@ export default function Home() {
         </p>
         <p>
           After leaving public service, I made what might look like a pretty
-          sharp turn into immigration, education, and legal technology.
+          sharp turn into immigration, education, and legal technology. I
+          founded <OutLink href={links.crediteval}>CreditEval</OutLink> and led
+          several different product lines, with an eventual exit to the parent
+          company of Local.com.
         </p>
         <p>
           I worked across product lines involving translations and credential
