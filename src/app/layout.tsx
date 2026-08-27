@@ -13,6 +13,13 @@ export const metadata: Metadata = {
   description:
     "Guy Pearson — Honcho, GEO Credential Services. Austin, Texas.",
   metadataBase: new URL("https://guyp.me"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon", type: "image/png", sizes: "32x32" },
+    ],
+    apple: "/apple-icon",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
