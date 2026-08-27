@@ -137,22 +137,9 @@ a:hover {
 .topbar {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 24px 0;
   border-bottom: 2px solid var(--color-divider);
-}
-
-.brand {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 15px;
-  color: var(--color-text);
-  text-decoration: none;
-}
-
-.brand:hover {
-  color: var(--color-accent);
-  text-decoration: none;
 }
 
 .topnav {

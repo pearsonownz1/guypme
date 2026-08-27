@@ -10,9 +10,6 @@ const contact = {
 export function SiteHeader({ current }: { current?: "home" | "projects" }) {
   return (
     <header className="topbar">
-      <Link href="/" className="brand">
-        Guy Pearson
-      </Link>
       <nav className="topnav">
         <Link
           className="site-link"
