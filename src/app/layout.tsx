@@ -11,7 +11,7 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   title: "Guy Pearson — guyp.me",
   description:
-    "Guy Pearson — VP of Product, GEO Credential Services. Austin, Texas.",
+    "Guy Pearson — Honcho, GEO Credential Services. Austin, Texas.",
   metadataBase: new URL("https://guyp.me"),
 };
 

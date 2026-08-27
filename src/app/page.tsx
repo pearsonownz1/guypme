@@ -76,7 +76,7 @@ const route = [
     now: true,
     detail: (
       <>
-        <strong>VP of Product</strong> ·{" "}
+        <strong>Honcho</strong> ·{" "}
         <OutLink href={links.gcs}>GEO Credential Services</OutLink>
       </>
     ),
@@ -110,7 +110,7 @@ export default function Home() {
         <div>
           <h1>Guy Pearson</h1>
           <div className="sub">
-            VP of Product,{" "}
+            Honcho,{" "}
             <OutLink href={links.gcs}>GEO Credential Services</OutLink> ·
             Austin, Texas
           </div>
@@ -169,7 +169,7 @@ export default function Home() {
           product lines.
         </p>
         <p>
-          Today, I’m VP of Product at{" "}
+          Today, I’m Honcho at{" "}
           <OutLink href={links.gcs}>GEO Credential Services</OutLink>, where I’m
           once
           again working at the intersection of technology, immigration,
