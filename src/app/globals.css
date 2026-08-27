@@ -298,16 +298,13 @@ a:hover {
 
 .project {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 24px;
-  align-items: start;
+  grid-template-columns: 1fr;
+  gap: 18px;
 }
 
 .project-shot {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 16 / 10;
+  display: block;
+  overflow: hidden;
   border: 2px solid var(--color-divider);
   background: var(--color-surface);
   color: var(--color-neutral-500);
@@ -315,6 +312,7 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .project-shot img {
@@ -367,7 +365,4 @@ a:hover {
     grid-template-columns: 100px 1fr;
   }
 
-  .project {
-    grid-template-columns: 1fr;
-  }
 }

@@ -6,11 +6,12 @@ export const metadata: Metadata = {
   description: "Side projects from Guy Pearson.",
 };
 
-const placeholders = [
+const projects = [
   {
-    name: "Project one",
-    url: "https://example.com",
-    why: "A short note on why I built this — the itch, the idea, or the thing I wanted to try.",
+    name: "Selling Highs",
+    url: "https://sellinghighs.com",
+    image: "/projects/selling-highs.png",
+    why: "SellingHighs.com is a fully AI-run quantitative trading system that trades Kalshi's daily record-high-temperature prediction markets across five U.S. cities. It ingests real-time METAR station observations from the Iowa Environmental Mesonet, official NWS climate reports, and NOAA's National Blend of Models forecast to build a calibrated probability distribution for each temperature bracket, then compares that model against Kalshi's live order book to surface statistically significant, fee-adjusted trading edges. Every candidate trade is reviewed by an LLM-based approval agent — which weighs the model's edge, market conditions, and risk limits before deciding to approve or deny it — and, once approved, is executed automatically through Kalshi's official Order API, with every fill reconciled against the day's official climate report. Has executed 500+ AI-approved trades, generating a net profit of roughly $70 on settled positions to date.",
   },
 ];
 
@@ -29,20 +30,34 @@ export default function ProjectsPage() {
       </section>
 
       <section className="projects">
-        {placeholders.map((project) => (
+        {projects.map((project) => (
           <article key={project.name} className="project">
-            <div className="project-shot" aria-hidden>
-              <span>Screenshot</span>
-            </div>
+            <a
+              className="project-shot"
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={project.image} alt={`${project.name} screenshot`} />
+            </a>
             <div className="project-body">
-              <h2>{project.name}</h2>
+              <h2>
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {project.name}
+                </a>
+              </h2>
               <a
                 className="project-url"
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {project.url.replace(/^https?:\/\//, "")}
+                sellinghighs.com
               </a>
               <p>{project.why}</p>
             </div>
