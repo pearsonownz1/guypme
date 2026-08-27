@@ -169,7 +169,7 @@ export default function Home() {
           product lines.
         </p>
         <p>
-          Today, I’m Honcho at{" "}
+          Today I am leading{" "}
           <OutLink href={links.gcs}>GEO Credential Services</OutLink>, where I’m
           once
           again working at the intersection of technology, immigration,
