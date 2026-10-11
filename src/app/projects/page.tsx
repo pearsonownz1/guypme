@@ -30,6 +30,12 @@ const projects: {
     image: "/projects/border-intel.png",
     why: "A real-time logistics intelligence platform built around Laredo, TX, the busiest inland port on the US-Mexico border. It ingests live data from multiple public sources: ADS-B aircraft telemetry (adsb.lol) for airborne traffic around Laredo International Airport, U.S. CBP border-crossing statistics, rail carrier volumes, maritime vessel tracking, live traffic-camera feeds, and stock/market quotes, then fuses them into a single operational view. Built as a full-stack TypeScript app (React/Vite frontend, Express API, OpenAPI-driven contracts) with a live interactive map. I live on the border, and the ability to draw in many different sources to make informed decisions and potentially future predictions on trade outcomes.",
   },
+  {
+    name: "FurnishedKeys",
+    url: "https://furnishedkeys.com",
+    image: "/projects/furnished-keys.jpg",
+    why: "Furnished Keys is a furnished rental marketplace and property management service launched initially in Central Oregon, with plans to expand across the Northwest. It’s designed to connect people who need a home for a month or longer with landlords offering move-in-ready ADUs. Whether you’re relocating, traveling for work, or between homes, Furnished Keys aims to make finding a flexible rental simpler. For owners, it offers help with everything from marketing and tenant inquiries to showings, move-ins, and ongoing management, making rental income easier to manage.",
+  },
 ];
 
 function ProjectLink({
