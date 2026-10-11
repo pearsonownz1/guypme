@@ -10,6 +10,9 @@ const contact = {
 export function SiteHeader({ current }: { current?: "home" | "projects" }) {
   return (
     <header className="topbar">
+      <Link href="/" className="brand">
+        guyp.me
+      </Link>
       <nav className="topnav">
         <Link
           className="site-link"
