@@ -111,16 +111,12 @@ export default function Home() {
           <h1>Guy Pearson</h1>
           <div className="sub">
             Honcho,{" "}
-            <OutLink href={links.gcs}>GEO Credential Services</OutLink> ·
-            Austin, Texas
+            <OutLink href={links.gcs}>GEO Credential Services</OutLink>
           </div>
         </div>
       </section>
 
       <article className="story">
-        <p>
-          Hi, my name is Guy. I’m based in Austin, Texas 👋
-        </p>
         <p>
           I started out in the military working in supply chain and logistics.
           Somewhere along the way, that path led me into cybersecurity, where I
@@ -204,8 +200,8 @@ export default function Home() {
 
       <footer className="outro">
         <p>
-          If you&apos;re in Austin—or passing through—and want to talk product,
-          AI, startups, weird ideas, or anything else, reach out.
+          If you want to talk product, AI, startups, weird ideas, or anything
+          else, reach out.
         </p>
         <p className="sell">Coffee is usually a pretty easy sell.</p>
         <a
