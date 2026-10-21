@@ -112,14 +112,14 @@ export default function Home() {
           <div className="sub">
             Honcho,{" "}
             <OutLink href={links.gcs}>GEO Credential Services</OutLink> ·
-            Austin, Texas
+            Bend, Oregon
           </div>
         </div>
       </section>
 
       <article className="story">
         <p>
-          Hi, my name is Guy. I’m based in Austin, Texas 👋
+          Hi, my name is Guy. I’m based in Bend, Oregon 👋
         </p>
         <p>
           I started out in the military working in supply chain and logistics.
@@ -204,7 +204,7 @@ export default function Home() {
 
       <footer className="outro">
         <p>
-          If you&apos;re in Austin—or passing through—and want to talk product,
+          If you&apos;re in Bend—or passing through—and want to talk product,
           AI, startups, weird ideas, or anything else, reach out.
         </p>
         <p className="sell">Coffee is usually a pretty easy sell.</p>
