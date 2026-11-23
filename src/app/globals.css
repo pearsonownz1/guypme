@@ -366,6 +366,10 @@ a:hover {
   margin-top: 8px;
 }
 
+.project-after {
+  margin-top: 12px;
+}
+
 @media (max-width: 560px) {
   .topbar {
     flex-wrap: wrap;

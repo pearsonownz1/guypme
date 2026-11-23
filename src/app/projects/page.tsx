@@ -13,7 +13,22 @@ const projects: {
   image: string;
   why: string;
   steps?: string[];
+  after?: string;
 }[] = [
+  {
+    name: "Notara",
+    url: "https://demo.notara.com",
+    image: "/projects/notara.jpg",
+    why: "Notara's agent-to-agent signing. One AI agent can send a document, the other side's AI agent can review it and sign it, and every action stays within rules a human set ahead of time. First, the account owner sets up delegations:",
+    steps: [
+      "which agent is allowed to act for them",
+      "what kinds of documents it can sign",
+      "how much money it can commit to",
+      "when it has to stop and get human approval",
+    ],
+    after:
+      "When a document comes in, the receiving agent checks it against those rules. Inside the limits, it signs on its own. Outside them, it flags the document and sends it to a person. Each step is recorded in an audit trail showing who authorized what, which agent acted and when, so companies get the speed of automated deals with clear legal accountability. It's built on the same human-in-the-loop guardrails used in real agentic workflows: agents handle the routine signings, and people decide the exceptions.",
+  },
   {
     name: "CredPronto",
     url: "https://credpronto.com",
@@ -114,6 +129,7 @@ export default function ProjectsPage() {
                   ))}
                 </ul>
               ) : null}
+              {project.after ? <p className="project-after">{project.after}</p> : null}
             </div>
           </article>
         ))}
