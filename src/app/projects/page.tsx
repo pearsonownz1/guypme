@@ -12,7 +12,20 @@ const projects: {
   url?: string;
   image: string;
   why: string;
+  steps?: string[];
 }[] = [
+  {
+    name: "CredPronto",
+    url: "https://credpronto.com",
+    image: "/projects/credpronto.jpg",
+    why: "CredPronto is a platform for evaluating foreign academic credentials. It gives a fast, consistent first read on what a foreign degree or diploma equals in the U.S., which matters most for immigration cases. Its reference data comes from AACRAO EDGE, covering 249 education systems and more than 4,200 credentials, each mapped to a U.S. equivalency with a reason and a confidence level. The agentic workflow chains AI steps with human checks at the end:",
+    steps: [
+      "An order or uploaded document comes in.",
+      "An AI agent pulls out the credential details, matches them against the EDGE data and suggests the U.S. equivalent, with its reasoning and a confidence score.",
+      "Anything low-confidence or unusual goes to a human QA reviewer, so a person makes the final call before anything is certified.",
+      "Approved results feed back into the system, so its suggestions get better over time.",
+    ],
+  },
   {
     name: "Selling Highs",
     url: "https://sellinghighs.com",
@@ -94,6 +107,13 @@ export default function ProjectsPage() {
                 </a>
               ) : null}
               <p>{project.why}</p>
+              {project.steps ? (
+                <ul className="project-steps">
+                  {project.steps.map((step) => (
+                    <li key={step}>{step}</li>
+                  ))}
+                </ul>
+              ) : null}
             </div>
           </article>
         ))}
